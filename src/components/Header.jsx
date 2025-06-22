@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import font from "../../public/Font"
 
 function Header() {
   return (
@@ -14,15 +13,24 @@ function Header() {
           />
         </Link>
 
-        {/* Name + nav */}
+        {/* Name + nav + CV button */}
         <div className="mt-4 md:mt-8">
-          <h1
-          
-            className=" font-myfont text-3xl font-normal text-black tracking-wide"
-            style={{ fontFamily: "Montserrat" }}
-          >
-            SEB KAY
-          </h1>
+          <div className="flex items-center space-x-3">
+            <h1
+              className="font-myfont text-3xl font-normal text-black tracking-wide"
+              style={{ fontFamily: "Montserrat" }}
+            >
+              VISAL SAINI
+            </h1>
+            <a
+              href="/cv.pdf"
+              download
+              className="text-sm text-gray-600 hover:text-blue-400 transition-colors duration-300"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Download Cv
+            </a>
+          </div>
           <div className="h-1.5 w-12 bg-blue-500 mt-1 mb-7 rounded-full"></div>
 
           <nav

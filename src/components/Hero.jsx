@@ -7,20 +7,20 @@ function Hero() {
         className="text-xl sm:text-5xl font-normal text-gray-900 mb-8 -mt-0  ml-0"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
-        👨‍💻 Web & Software Developer
+        👨‍💻 FRONTEND TEAM LEAD
       </h2>
 
       <p
         className="text-lg sm:text-2xl text-gray-700 mb-8"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
-        I build web apps with
+        A highly driven Frontend Team Lead and Technical Manager with 7+ years of experience in building scalable, high-performance web applications using React.js and TypeScript.
         <Underline lineColor={'red'}>
-          Laravel
+          React.js
         </Underline>
         ,
         <Underline lineColor={'pink'}>
-          Livewire
+          TypeScript
         </Underline>
         ,
         <Underline lineColor={'purple'}>
@@ -41,8 +41,7 @@ function Hero() {
         className="text-lg text-slate-600 mt-3 mb-5 sm:text-xl text-left"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
-        I'm from Southampton, UK and am currently lead developer at a local
-        agency.
+        I'm from Gurugram, India and am currently lead developer at a Programimng.com
       </p>
 
       <p
