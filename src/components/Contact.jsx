@@ -1,16 +1,16 @@
 function Contact() {
-  return(
-   <div className="min-h-screen flex items-center justify-center ">
-      <div className="w-full  max-w-3xl ">
+  return (
+    <div className="min-h-screen flex items-center justify-center p-4">
+      <div className="w-full max-w-3xl">
         <h1 className="text-5xl font-normal text-center mb-4">Contact Me</h1>
         <p className="text-center text-xl text-gray-600 mb-8">
-          If you'd like to chat about a project or just have question,
+          If you'd like to chat about a project or just have a question,
           please fill in the form below. I aim to get back within 2 days.
         </p>
 
         <form className="space-y-6">
-          <div className="flex space-x-4">
-            <div className="w-1/2">
+          <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+            <div className="w-full md:w-1/2">
               <label className="block text-sm font-normal mb-1">
                 Name <span className="text-red-500">*</span>
               </label>
@@ -19,7 +19,7 @@ function Contact() {
                 className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <label className="block text-sm font-normal mb-1">
                 Email <span className="text-red-500">*</span>
               </label>
@@ -61,8 +61,7 @@ function Contact() {
         </form>
       </div>
     </div>
-
-  )
+  );
 }
+
 export default Contact;
- 

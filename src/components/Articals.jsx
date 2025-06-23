@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const articlesData = [
- {
+  {
     id: 1,
     title: "Case Study: Project Management for DIY Enthusiasts",
     tag: "Side Projects",
@@ -76,18 +76,18 @@ export default function ArticlesPage() {
   };
 
   return (
-    <div className="flex px-16 py-10 pt-0 ml-52 ">
+    <div className="flex flex-col lg:flex-row px-4 lg:px-16 py-10 pt-0 lg:ml-52">
       {/* Sidebar */}
-      <div className="w-1/4 pr-10">
+      <div className="w-full lg:w-1/4 lg:pr-10 mb-10 lg:mb-0">
         <div className="relative mb-14">
           <input
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="PHP, WordPress, Freelancing...   "
-            className="w-72 border rounded-lg px-6 py-4"
+            placeholder="PHP, WordPress, Freelancing..."
+            className="w-full border rounded-lg px-6 py-4"
           />
-          <span className="absolute right-0 top-4 text-gray-400">🔍</span>
+          <span className="absolute right-3 top-4 text-gray-400">🔍</span>
         </div>
 
         <p className="font-normal text-lg mb-4 ml-2">Filter By</p>
@@ -96,7 +96,7 @@ export default function ArticlesPage() {
             <button
               key={tag}
               onClick={() => setSelectedTag(tag)}
-              className={`border border-black w-22 rounded-full  px-3 py-1 text-sm ${
+              className={`border border-black rounded-full px-3 py-1 text-sm ${
                 selectedTag === tag ? "bg-blue-100 text-blue-700" : "text-gray-700"
               }`}
             >
@@ -114,8 +114,8 @@ export default function ArticlesPage() {
         </div>
       </div>
 
-      {/* Articles section */}
-      <div className="w-3/4 ml-12">
+      {/* Articles */}
+      <div className="w-full lg:w-3/4">
         <h1 className="text-5xl font-normal mb-8">Articles</h1>
         <p className="text-xl text-gray-600 mb-24">
           My thoughts on web development and a look at my personal life.
@@ -125,7 +125,7 @@ export default function ArticlesPage() {
           filteredArticles.map(article => (
             <div key={article.id} className="border-b pb-12 mb-24">
               <h2 className="text-3xl font-normal mb-5">{article.title}</h2>
-              <div className="flex items-center text-sm text-gray-500 space-x-3 mb-5">
+              <div className="flex flex-wrap items-center text-sm text-gray-500 space-x-3 mb-5">
                 <span className="border rounded-full px-2 py-0.5">{article.tag}</span>
                 <span>{article.date}</span>
                 <span>{article.readTime}</span>

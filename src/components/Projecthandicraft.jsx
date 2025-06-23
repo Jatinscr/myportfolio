@@ -6,35 +6,36 @@ function Projecthandicraft() {
     <div>
       <Header />
 
-      <div className="max-w-[1284px] mx-auto ">
+      <div className="max-w-[1284px] mx-auto px-4 sm:px-6 md:px-8">
         {/* TEXT SECTION */}
         <div className="text-center mb-8">
-          <h1 className="text-5xl font-normal text-gray-800 mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-normal text-gray-800 mb-3 sm:mb-4">
             Handicraft
           </h1>
-          <p className="text-gray-700 leading-relaxed font-light text-2xl mb-6">
+          <p className="text-gray-700 leading-relaxed font-light text-lg sm:text-xl md:text-2xl mb-4 sm:mb-6">
             A visual project management app built for DIYers to organise and
-            share<br></br> their creative work.
+            share
+            <br className="hidden sm:inline" /> their creative work.
           </p>
-          <div className="flex justify-center gap-6 flex-wrap text-gray-700 leading-relaxed font-light text-2xl mb-24">
+          <div className="flex justify-center gap-3 sm:gap-6 flex-wrap text-gray-700 leading-relaxed font-light text-base sm:text-lg md:text-2xl mb-12 sm:mb-24">
             <div className="flex items-center">
-              <span className="mr-2">✔</span> Web App Design
+              <span className="mr-1 sm:mr-2">✔</span> Web App Design
             </div>
             <div className="flex items-center">
-              <span className="mr-2">✔</span> Laravel
+              <span className="mr-1 sm:mr-2">✔</span> Laravel
             </div>
             <div className="flex items-center">
-              <span className="mr-2">✔</span> Filament (Laravel)
+              <span className="mr-1 sm:mr-2">✔</span> Filament (Laravel)
             </div>
             <div className="flex items-center">
-              <span className="mr-2">✔</span> Tailwind CSS
+              <span className="mr-1 sm:mr-2">✔</span> Tailwind CSS
             </div>
           </div>
         </div>
 
-        {/* IMAGE SECTION (completely independent of text) */}
-        <div className="w-full mt-8 mb-16">
-          <div className="w-full h-[1350px] bg-gray-200 rounded-2xl overflow-hidden shadow-2xl">
+        {/* IMAGE SECTION */}
+        <div className="w-full mt-8 mb-12 sm:mb-16">
+          <div className="w-full h-64 sm:h-[600px] md:h-[1350px] bg-gray-200 rounded-2xl overflow-hidden shadow-2xl">
             <img
               src="/image/project1.png"
               alt="Handicraft Project"
@@ -44,163 +45,94 @@ function Projecthandicraft() {
         </div>
       </div>
 
-      <div className="pl-[404px] pr-[420px] pt-8 pb-16 text-gray-800 leading-relaxed text-lg">
+      <div className="px-4 sm:px-8 md:px-[404px] md:pr-[420px] pt-6 sm:pt-8 pb-12 sm:pb-16 text-gray-800 leading-relaxed text-base sm:text-lg">
         {/* Overview Section */}
-        <section className="mb-10">
-          <h2 className="text-3xl font-normal mb-4">Overview</h2>
-          <p className="mb-4 text-gray-700 text-lg leading-relaxed font-normal font-sans">
+        <section className="mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl font-normal mb-3 sm:mb-4">Overview</h2>
+          <p className="mb-3 sm:mb-4 text-gray-700 leading-relaxed font-normal font-sans">
             After my wife and I bought our first house over five years ago, I
-            became deeply involved in various DIY projects around our home.
-            While not all of them were successful, each one taught me valuable
-            lessons about working outside the digital world.
+            became deeply involved in various DIY projects around our home...
           </p>
-          <p className="mb-4 text-gray-700 text-lg leading-relaxed font-normal font-sans">
+          <p className="mb-3 sm:mb-4 text-gray-700 leading-relaxed font-normal font-sans">
             Seeing how much of my time and energy was spent organizing these
-            projects, I realized there was a need for a tool that could help
-            hobbyists and DIY enthusiasts like me manage their creative
-            endeavors more effectively.
+            projects, I realized there was a need for a tool...
           </p>
           <p>
             That's why I decided to create{" "}
             <a href="#" className="text-blue-600 underline">
               Handicraft
             </a>{" "}
-            — a web app designed to help DIYers plan, track, and share their
-            projects in an organized and visually engaging way.
+            — a web app designed to help DIYers plan, track, and share...
           </p>
         </section>
 
         {/* The Problem */}
-        <section className="mb-10">
-          <h2 className="text-3xl font-normal mb-4">The Problem</h2>
-          <p className="mb-4 text-gray-700 text-lg leading-relaxed font-normal font-sans">
-            Existing project management tools were either too complex or too
-            generic for casual DIYers. The average DIYer doesn't need a
-            heavy-duty, business-oriented tool like Trello or Asana; they just
-            need something simple, visual, and tailored to their creative
-            process.
+        <section className="mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl font-normal mb-3 sm:mb-4">The Problem</h2>
+          <p className="mb-3 sm:mb-4 text-gray-700 leading-relaxed font-normal font-sans">
+            Existing project management tools were either too complex...
           </p>
-          <p className="mb-4 text-gray-700 text-lg leading-relaxed font-normal font-sans">
-            Many hobbyists juggle multiple projects at once — home renovations,
-            woodworking, crafting, and more — but rely on a mishmash of
-            notebooks, camera rolls, and mental checklists to keep track of
-            everything. This results in:
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>
-              <strong>Disorganization:</strong> Important steps or ideas get
-              lost, especially on long-term projects.
-            </li>
-            <li>
-              <strong>Lack of visual structure:</strong> DIY projects often
-              require more than just written instructions — they need images,
-              sketches, and visual cues.
-            </li>
-            <li>
-              <strong>No motivation loop:</strong> Without a clear, visual sense
-              of progress, people are more likely to abandon projects halfway
-              through.
-            </li>
-            <li>
-              <strong>Sharing limitations:</strong> DIYers often want to share
-              their work with others, but traditional tools aren't built to
-              foster community or feedback.
-            </li>
+          <ul className="list-disc list-inside mb-3 sm:mb-4">
+            <li><strong>Disorganization:</strong> Important steps or ideas get lost...</li>
+            <li><strong>Lack of visual structure:</strong> DIY projects often require...</li>
+            <li><strong>No motivation loop:</strong> Without a clear, visual sense of progress...</li>
+            <li><strong>Sharing limitations:</strong> DIYers often want to share...</li>
           </ul>
         </section>
 
         {/* The Solution */}
-        <section className="mb-10">
-          <h2 className="text-3xl font-normal mb-4">The Solution</h2>
+        <section className="mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl font-normal mb-3 sm:mb-4">The Solution</h2>
           <p>
             I built{" "}
             <a href="#" className="text-blue-600 underline">
               Handicraft
             </a>{" "}
-            to address these gaps. By using a simple, visual approach to project
-            management, Handicraft enables users to break down their DIY
-            projects into manageable steps, attach images and notes, and track
-            progress with ease. The app empowers hobbyists to stay organized,
-            motivated, and connected.
+            to address these gaps...
           </p>
         </section>
 
         {/* The Technology */}
-        <section className="mb-10">
-          <h2 className="text-3xl font-normal mb-4">The Technology</h2>
-          <p className="mb-4  text-gray-700 text-lg leading-relaxed font-normal font-sans">
-            To build Handicraft, I relied on a modern and efficient tech stack
-            that would offer both scalability and an intuitive user experience:
+        <section className="mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl font-normal mb-3 sm:mb-4">The Technology</h2>
+          <p className="mb-3 sm:mb-4 text-gray-700 leading-relaxed font-normal font-sans">
+            To build Handicraft, I relied on a modern and efficient tech stack...
           </p>
-          <ul className="list-disc list-inside mb-4 ">
+          <ul className="list-disc list-inside mb-3 sm:mb-4">
             <li>
               <strong>Backend:</strong> I chose{" "}
-              <a href="#" className="text-blue-600 underline">
-                Laravel
-              </a>{" "}
-              for its robustness and ease of use. Laravel's built-in features,
-              like authentication and data validation, saved me a lot of
-              development time. It also provided a secure and flexible
-              foundation for building the app’s API and managing user data.
+              <a href="#" className="text-blue-600 underline">Laravel</a> for its robustness...
             </li>
           </ul>
         </section>
 
         {/* The Result */}
-        <section className="mb-10">
-          <h2 className="text-3xl font-normal mb-4">The Result</h2>
-          <p className="mb-4  text-gray-700 text-lg leading-relaxed font-normal font-sans">
-            Early feedback from users has been overwhelmingly positive,
-            particularly around how Handicraft helps with project completion and
-            organization. Key results include:
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>
-              <strong>Improved project completion rates:</strong> The
-              step-by-step breakdown and visual progress tracking has helped
-              users stay motivated and finish more projects.
-            </li>
-            <li>
-              <strong>Stronger sense of organization:</strong> The ability to
-              attach images, notes, and statuses to individual steps has made it
-              easier for users to keep track of multi-phase projects.
-            </li>
-            <li>
-              <strong>Increased shareability:</strong> Users love the option to
-              share polished project outlines with friends, family, or online
-              communities, fostering engagement and feedback.
-            </li>
-            <li>
-              <strong>Low learning curve:</strong> New users have been able to
-              get started without needing tutorials, thanks to the intuitive
-              design.
-            </li>
+        <section className="mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl font-normal mb-3 sm:mb-4">The Result</h2>
+          <ul className="list-disc list-inside mb-3 sm:mb-4">
+            <li><strong>Improved project completion rates:</strong> The step-by-step breakdown...</li>
+            <li><strong>Stronger sense of organization:</strong> The ability to attach images...</li>
+            <li><strong>Increased shareability:</strong> Users love the option to share...</li>
+            <li><strong>Low learning curve:</strong> New users have been able to get started...</li>
           </ul>
-          <p className="mb-6  text-gray-700 text-lg leading-relaxed font-normal font-sans">
-            Built with Laravel for scalability, Vue.js and Inertia.js for
-            dynamic interactivity, and Tailwind CSS for responsive design,{" "}
-            <a href="#" className="text-blue-600 underline">
-              Handicraft
-            </a>{" "}
-            is already evolving with features like AI-driven step generation,
-            which is currently in development.
+          <p className="mb-4 text-gray-700 leading-relaxed font-normal font-sans">
+            Built with Laravel for scalability, Vue.js and Inertia.js...
           </p>
-          <p className="mb-24 text-gray-700 text-lg leading-relaxed font-normal font-sans">
-            The app’s success so far proves that even casual creators benefit
-            from thoughtful tools that support their specific workflows.
+          <p className="mb-12 sm:mb-24 text-gray-700 leading-relaxed font-normal font-sans">
+            The app’s success so far proves that even casual creators benefit...
           </p>
-          <div className="text-center ">
+          <div className="text-center">
             <a
               href="https://handicraft-app.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-full text-lg font-semibold text-white"
-              style={{ backgroundColor: "#2980B9 " }} // exact color
+              className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-lg font-semibold text-white"
+              style={{ backgroundColor: "#2980B9" }}
             >
               Visit Site
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="ml-2 h-7 w-7"
+                className="ml-2 h-5 w-5 sm:h-7 sm:w-7"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -216,6 +148,7 @@ function Projecthandicraft() {
           </div>
         </section>
       </div>
+
       <Newsletterfooter />
     </div>
   );
